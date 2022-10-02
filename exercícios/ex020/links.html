@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personalizando links</title>
+    <style>
+
+        /*seletores personalizados
+
+        #id
+        .classe
+        :pseudo-class
+        ::pseudo-elemento
+        >clindren*/
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+           font-weight: bolt; 
+        }
+
+        a:visited {
+            color: brown;
+        }
+
+        a:hover {
+            text-decoration: underline crimson;
+            color: black;
+        }
+
+        a:active {
+            color: yellow
+        }
+
+        .especial {
+            background-color: palevioletred;
+        }
+
+        .especial::before {
+            content: Ȣ ;
+            color: lightgoldenrodyellow;
+        }
+
+        .especial::after {
+            content: 'ȣ';
+            color: lightgoldenrodyellow;
+        }
+
+        ul {
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara/html-css/tree/master/exercicios" class="especial">repositório github</a></li>
+        <li><a href="https://www.youtube.com/c/CursoemVídeo" class="especial">canal do youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/curso/cur" class="especial">site do cursoenvideo</a></li>
+    </ul>
+    
+</body>
+</html>
