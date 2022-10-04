@@ -1,0 +1,33 @@
+body {
+    width: 450px;
+    background-color: black;
+    margin: auto;
+  
+}
+ img {
+    padding: 2px;
+    border-radius: 29px;
+  
+    
+ }
+
+h1 {
+    color: aliceblue;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.area {
+    float: left;
+
+}
+
+p {
+    color: aliceblue
+
+ 
+}
+
+
+
+  
