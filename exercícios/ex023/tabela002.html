@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td,th {
@@ -25,14 +26,34 @@
             color: white;
         }
 
+        thead > tr > th {
+            position: sticky;
+            top: 1px;
+            background-color: black;
+        }
+
         td.num {
             text-align: right;
         }
+
+        caption {
+            font-weight: bold;
+            font-size: 1.5em;
+            padding: 10px;
+            background-image: linear-gradient(to left,transparent,rgba(0, 0, 0, 0.544));
+        }
+         tbody > tr:nth-child(even) {
+            background-color: black;
+            color: white;
+         }
+
+         
     </style>
 </head>
 <body>
     <h1>uso de tabelas grandes</h1>
     <!--
+        CAPITION
         ANATOMIA PARA TABELAS GRANDES TABLE
         THEAD
             TR, TD, TH
@@ -42,15 +63,18 @@
             TR, TD, TH
     -->
     <table>
+        <caption> 
+            população das unidade federativas
+        </caption>
         <thead>
             <tr>
-                <th>estado</th>
-                <th>população</th>
+                <th scope="col">estado</th>
+                <th scope="col" style="width: 50px;">população</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>são paulo</td>
+                <td scope="row" >são paulo</td>
                 <td class="num">41 262 199</td>
             </tr>
             <tr>
